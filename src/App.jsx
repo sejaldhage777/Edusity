@@ -20,7 +20,7 @@ function App() {
       <Hero />
       <div className="container">
         <Title subTitle='Our PROGRAM' title='What We Offer' />
-        <Programs />
+        <Programs/>
         <About playState={playState} setPlayState={setPlaystate} />
 
         <Title subTitle='Gallery' title='Campus Photo' />
