@@ -1,0 +1,132 @@
+/*.programs{ 
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.program img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+.program{
+    flex-basis: 31%;
+    position: relative;
+}
+.caption{
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 15, 152, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0;
+    padding-top: 70%;
+    transition:0.4s ;
+}
+.caption img{
+    width: 60px;
+    margin-bottom: 10px;
+}
+.program:hover .caption{
+    opacity: 1;
+    padding-top: 0;
+}  */
+.programs {
+  margin: 80px auto;
+  width: 90%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.program {
+  flex: 1 1 30%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.program img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+
+.program:hover img {
+  transform: scale(1.05);
+}
+
+.caption {
+  border-radius: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 15, 152, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+  padding: 20px;
+  text-align: center;
+  backdrop-filter: blur(4px);
+}
+
+.caption img {
+  width: 50px;
+  margin-bottom: 12px;
+}
+
+.caption h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.caption p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.program:hover .caption {
+  opacity: 1;
+}
+@media (max-width: 650px){
+  .programs{
+    flex-direction: 100%;
+    margin: 20px;
+  }
+}
+@media(max-width:650px){
+          .programs{
+            flex-direction: column;
+          }
+          .program{
+            flex-basis: 100%;
+            
+          }
+}
